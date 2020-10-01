@@ -1,0 +1,306 @@
+:root {
+  --blue: #005499;
+  --light-blue: #0088ED;
+  --footer-top-box-height: 18%;
+  --footer-box-height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-header {
+  background-image: url(/assets/g2059.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.page-header div {
+  width: 50%;
+  margin: auto;
+  padding: 120px 0;
+  padding-top: 0;
+}
+
+.page-header picture img {
+  width: 150px;
+  padding: 50px 0 20px;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.page-header div h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.page-header a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  color: #383838;
+  width: 250px;
+  padding: 13px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/**
+* Meio da Página
+*
+*/
+
+.page-content {
+  margin: 50px 80px 80px;
+  font-size: 20px;
+}
+
+.page-content > h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #383838;
+  margin-bottom: 0;
+}
+
+.page-content > p {
+  font-weight: 600;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: white;
+}
+
+.first-row, .second-row, .third-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  height: 330px;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.card h2, p {
+  margin: 0;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.first-row .card:first-child {
+  background-color: red;
+  background-image: url(/assets/g441.png);
+  
+  width: 30%;
+}
+
+.first-row .card:last-child {
+  background-color: red;
+  background-image: url(/assets/g445.png);
+  width: 68%;
+}
+
+.second-row .card {
+  background-color: red;
+  background-image: url(/assets/g437.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  width: 100%;
+}
+
+.third-row .card:first-child {
+  background-color: red;
+  background-image: url(/assets/g429.png);
+  text-align: right;
+  
+  width: 68%;
+}
+
+.third-row .card:last-child {
+  background-color: red;
+  background-image: url(/assets/g433.png);
+  width: 30%;
+}
+
+/**
+* Footer da página
+*
+*/
+
+.page-footer {
+  display: flex;
+  position: relative;
+  background-color: #F4F4F4;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 450px;
+  padding: 80px 50px;
+}
+
+.page-footer .slogan-text {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  color: #383838;
+}
+
+.page-footer .slogan-text h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.page-footer .slogan-text p {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.page-footer .box-meter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  height: var(--footer-box-height);
+  width: 14%;
+}
+
+.page-footer .box-meter h4, .page-footer .box-meter p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.page-footer .box-meter p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.page-footer .box-meter div {
+  padding: 15px;
+  color: white;
+}
+
+.page-footer .box-meter div:first-child {
+  padding: 18px;
+  padding-bottom: 4px;
+}
+
+.page-footer .box-meter div:first-child h4{
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.page-footer .box-meter div:first-child p{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.page-footer .box-meter div:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-footer .box-meter div:last-child p {
+  font-size: 13px;
+}
+
+/**
+* Boxes do footer da página
+*/
+/* 2 */
+.page-footer .box-meter:nth-child(2) div:first-child {
+  background-color: var(--blue);
+  height: var(--footer-top-box-height);
+}
+
+.page-footer .box-meter:nth-child(2) div:last-child {
+  background-color: var(--light-blue);
+  height: 15%;
+}
+
+/* 3 */
+.page-footer .box-meter:nth-child(3) div:first-child {
+  background-color: var(--blue);
+  height: var(--footer-top-box-height);
+}
+
+.page-footer .box-meter:nth-child(3) div:last-child {
+  background-color: var(--light-blue);
+  height: 30%;
+}
+
+
+/* 4 */
+.page-footer .box-meter:nth-child(4) div:first-child {
+  background-color: var(--blue);
+  height: var(--footer-top-box-height);
+}
+
+.page-footer .box-meter:nth-child(4) div:last-child {
+  background-color:var(--light-blue);
+  height: 40%;
+}
+
+/* 5 */
+.page-footer .box-meter:nth-child(5) div:first-child {
+  background-color: var(--blue);
+  height: var(--footer-top-box-height);
+}
+
+.page-footer .box-meter:nth-child(5) div:last-child {
+  background-color: var(--light-blue);
+  height: 50%;
+}
+
+/* 6 */
+.page-footer .box-meter:nth-child(6) div:first-child {
+  background-color: var(--blue);
+  height: var(--footer-top-box-height);
+}
+
+.page-footer .box-meter:nth-child(6) div:last-child {
+  background-color: var(--light-blue);
+  height: 60%;
+}
+
+
+/* 7 */
+.page-footer .box-meter:nth-child(7) div:first-child {
+  background-color: var(--blue);
+  height: var(--footer-top-box-height);
+}
+
+.page-footer .box-meter:nth-child(7) div:last-child {
+  background-color: var(--light-blue);
+  height: 70%;
+}
